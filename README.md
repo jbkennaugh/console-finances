@@ -3,7 +3,7 @@
 ## Deployment
 
 __[Github Repository](https://github.com/jbkennaugh/console-finances)__
-__[Deployed Website](https://jbkennaugh.github.io/responsive-css/)__
+__[Deployed Website](https://jbkennaugh.github.io/console-finances/)__
 
 ## Description 
 
