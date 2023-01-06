@@ -111,7 +111,9 @@ console.log(
     "Total Months: "+totalMonths+"\n"+
     "Total: $"+netPL+"\n"+
     "Average Change: $"+averageChange.toFixed(2)+"\n"+
-    "Greatest Increase in Profits: "+profitMonth[0]+" ($"+profitMonth[1]+")\n"+
-    "Greatest Decrease in Profits: "+lossMonth[0]+" ($"+lossMonth[1]+")\n"+
+    "Greatest Increase in Profits: "+profitMonth[0]+" ($"+profitMonth[1]+") "+
+    "with an increase in profits of $"+greatestProfit+"\n"+
+    "Greatest Decrease in Profits: "+lossMonth[0]+" ($"+lossMonth[1]+") "+
+    "with an decrease in profits of $"+greatestLoss+"\n"+
     "-------------------------------------\n"
 );
