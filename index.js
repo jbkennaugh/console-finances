@@ -86,3 +86,32 @@ var finances = [
 ['Jan-2017', 138230],
 ['Feb-2017', 671099]
 ];
+
+var netPL = 0, totalChange = 0, totalMonths = 0, greatestProfit = 0, greatestLoss = 0;
+var profitMonth = ['', 0], lossMonth = ['', 0];
+var tempPL = finances[0][1]; //starts with first month PL 
+
+finances.forEach(function(record) {
+    thisPL = record[1] - tempPL; //calculates the change in PL between this period and the last
+    if(thisPL > greatestProfit) { profitMonth = record; greatestProfit = thisPL; } //finds and stores the greatest positive change in PL
+    if(thisPL < greatestLoss) { lossMonth = record; greatestLoss = thisPL; } //finds and stores the greatest negative change in PL
+
+    totalChange += thisPL;
+
+    tempPL = record[1];
+    netPL += record[1];
+    totalMonths++;
+});
+
+var averageChange = totalChange/(totalMonths-1); //-1 as the CHANGE in PL happens between months
+
+console.log(
+    "Financial Analysis\n"+
+    "-------------------------------------\n"+
+    "Total Months: "+totalMonths+"\n"+
+    "Total: $"+netPL+"\n"+
+    "Average Change: $"+averageChange.toFixed(2)+"\n"+
+    "Greatest Increase in Profits: "+profitMonth[0]+" ($"+profitMonth[1]+")\n"+
+    "Greatest Decrease in Profits: "+lossMonth[0]+" ($"+lossMonth[1]+")\n"+
+    "-------------------------------------\n"
+);
