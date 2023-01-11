@@ -114,6 +114,6 @@ console.log(
     "Greatest Increase in Profits: "+profitMonth[0]+" ($"+profitMonth[1]+") "+
     "with an increase in profits of $"+greatestProfit+"\n"+
     "Greatest Decrease in Profits: "+lossMonth[0]+" ($"+lossMonth[1]+") "+
-    "with an decrease in profits of $"+greatestLoss+"\n"+
+    "with a decrease in profits of $"+greatestLoss+"\n"+
     "-------------------------------------\n"
 );
