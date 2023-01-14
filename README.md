@@ -11,7 +11,7 @@ A JavaScript file using the console to organise the finances based on a 2-D arra
 
 ## Screenshot 
 
-![](./website-screenshot.png)
+![](./assets/images/website-screenshot.png)
 
 ## License
 
